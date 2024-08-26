@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="tasks">
+                <h3>Expired Tasks</h3>
+                <p>5</p>
+            </div>
+            <div class="tasks">
+                <h3>All Active Tasks</h3>
+                <p>7</p>
+            </div>
+            <div class="tasks">
+                <h3>Completed Tasks</h3>
+                <p>2/7</p>
+            </div>
+            <button class="add-task-btn">+ Add Task</button>
+        </aside>
+        <main class="board">
+            <div class="column to-do">
+                <h3>To Do</h3>
+                <div class="task-card low">
+                    <h4>Brainstorming</h4>
+                    <p>Brainstorming brings team members' diverse experience into play.</p>
+                    <p>Deadline: 12/5/24</p>
+                </div>
+                <div class="task-card high">
+                    <h4>Research</h4>
+                    <p>User research helps you create an optimal product for users.</p>
+                    <p>Deadline: 12/5/24</p>
+                </div>
+                <div class="task-card high">
+                    <h4>Wireframes</h4>
+                    <p>Low fidelity wireframes include the most basic content and visuals.</p>
+                    <p>Deadline: 12/5/24</p>
+                </div>
+            </div>
+            <div class="column in-progress">
+                <h3>In Progress</h3>
+                <div class="task-card">
+                    <h4>Onboarding Illustrations</h4>
+                    <p>Deadline: 12/5/24</p>
+                </div>
+                <div class="task-card">
+                    <h4>Moodboard</h4>
+                    <p>Deadline: 12/5/24</p>
+                </div>
+            </div>
+            <div class="column done">
+                <h3>Done</h3>
+                <div class="task-card completed">
+                    <h4>Mobile App Design</h4>
+                    <p>Deadline: 12/5/24</p>
+                </div>
+                <div class="task-card completed">
+                    <h4>Design System</h4>
+                    <p>Deadline: 12/5/24</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="modal" id="addTaskModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Add Task</h2>
+            <input type="text" placeholder="Task Title">
+            <textarea placeholder="Task Description"></textarea>
+            <input type="date">
+            <button class="save-task-btn">Save</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
